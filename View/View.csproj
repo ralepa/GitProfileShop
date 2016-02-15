@@ -254,6 +254,8 @@
     <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="lib\react\babel.js" />
+    <Content Include="Scripts\showdown.js" />
+    <Content Include="Scripts\showdown.min.js" />
     <Content Include="style\main.css" />
     <Content Include="lib\bootstrap\bootstrap.js" />
     <Content Include="lib\bootstrap\bootstrap.min.js" />
