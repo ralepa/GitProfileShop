@@ -11,9 +11,7 @@ namespace View
 
             bundles.Add(new ScriptBundle("~/bundles/react").Include(
                         "~/lib/react/react.min.js",
-                        "~/lib/react/react-dom.min.js",
-                        "~/lib/react/babel.js",
-                        "~/lib/react/gulpfile.js"));
+                        "~/lib/react/react-dom.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/lib/jquery/jquery.validate*"));

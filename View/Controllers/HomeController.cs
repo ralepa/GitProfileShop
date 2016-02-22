@@ -13,15 +13,5 @@ namespace View.Controllers
             return View();
         }
 
-        public ActionResult Cart()
-        {
-            return View();
-        }
-
-        public ActionResult ReactTest()
-        {
-            return View();
-        }
-
     }
 }

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+     Response.AppendHeader("Access-Control-Allow-Origin", "*");
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,7 +9,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/style/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    @Scripts.Render("~/bundles/jquery")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -22,8 +25,6 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Carrinho", "Cart", "Home")</li>
-                    <li>@Html.ActionLink("React", "ReactTest", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -36,7 +37,7 @@
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
+    
     @Scripts.Render("~/bundles/react")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
